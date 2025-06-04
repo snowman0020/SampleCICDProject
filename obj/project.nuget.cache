@@ -1,11 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "QRBTu54SnBE=",
-  "success": true,
+  "dgSpecHash": "ZkoibWBDtEg=",
+  "success": false,
   "projectFilePath": "D:\\codingGit\\SampleCICDProject\\SampleCICDProject.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nincu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
-    "C:\\Users\\nincu\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+    "C:\\Users\\nincu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.AspNetCore.OpenApi 9.0.5 is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Package Microsoft.AspNetCore.OpenApi 9.0.5 supports: net9.0 (.NETCoreApp,Version=v9.0)",
+      "projectPath": "D:\\codingGit\\SampleCICDProject\\SampleCICDProject.csproj",
+      "filePath": "D:\\codingGit\\SampleCICDProject\\SampleCICDProject.csproj",
+      "libraryId": "Microsoft.AspNetCore.OpenApi",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
