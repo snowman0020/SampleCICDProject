@@ -5,3 +5,5 @@ obj/
 *.suo
 .vscode/
 .git/
+bin/
+obj/
