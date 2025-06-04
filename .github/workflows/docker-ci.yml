@@ -1,34 +1,33 @@
-name: Build and Deploy to Docker
+name: Build and Push Docker Image
 
 on:
   push:
-    branches: [ main ]  # หรือใช้ dev ถ้าคุณ deploy จาก branch อื่น
+    branches: [ main ]
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout Code
       uses: actions/checkout@v3
 
-    - name: Set up .NET 8 SDK
+    - name: Set up .NET SDK
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '8.0.x'
 
-    - name: Restore dependencies
+    - name: Restore Dependencies
       run: dotnet restore
 
-    - name: Build project
-      run: dotnet build --configuration Release
-
-    - name: Publish project
+    - name: Publish Project
       run: dotnet publish -c Release -o ./publish
 
-    - name: Build Docker image
-      run: docker build -t samplecicd:latest .
+    - name: Log in to DockerHub
+      run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
 
-    # Optional: Run container (local test only)
-    # - name: Run Docker container
-    #   run: docker run -d -p 8080:8080 samplecicd:latest
+    - name: Build Docker Image
+      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/samplecicd:latest .
+
+    - name: Push Docker Image
+      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/samplecicd:latest
