@@ -1,0 +1,8 @@
+D:\codingGit\SampleCICDProject\obj\Debug\net8.0\SampleCICDProject.csproj.AssemblyReference.cache
+D:\codingGit\SampleCICDProject\obj\Debug\net8.0\SampleCICDProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\codingGit\SampleCICDProject\obj\Debug\net8.0\SampleCICDProject.AssemblyInfoInputs.cache
+D:\codingGit\SampleCICDProject\obj\Debug\net8.0\SampleCICDProject.AssemblyInfo.cs
+D:\codingGit\SampleCICDProject\obj\Debug\net8.0\SampleCICDProject.csproj.CoreCompileInputs.cache
+D:\codingGit\SampleCICDProject\obj\Debug\net8.0\SampleCICDProject.MvcApplicationPartsAssemblyInfo.cs
+D:\codingGit\SampleCICDProject\obj\Debug\net8.0\SampleCICDProject.MvcApplicationPartsAssemblyInfo.cache
+D:\codingGit\SampleCICDProject\obj\Debug\net8.0\SampleCICDProject.sourcelink.json
